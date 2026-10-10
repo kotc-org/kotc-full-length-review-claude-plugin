@@ -15,9 +15,9 @@ This is not an official AAMC product. It does not access AAMC Prep Hub, provide 
 
 ## Designated reviewer demonstration
 
-Designated reviewer connections may receive an explicitly labeled KOTC-original synthetic reviewer demonstration: three original circuit questions with simulated correct, incorrect, and unanswered responses. This sample is not a real completed production attempt, a 230-question full-length exam, an AAMC exam, or cohort analytics. Total and section scaled scores are null. Missing authored explanations and option rationales remain null; any independent teaching inference must be labeled separately. Other accounts and the progress tools retain their normal authorized data paths.
+When the service enables its exact designated reviewer account, all six private tools return only an explicitly labeled KOTC-original synthetic reviewer demonstration, including study snapshot, subject performance, and exam progress. No production profile, preferences, momentum, progress, real exam history, monthly scores, or cohort records are read for these reviewer tool results. Three original circuit questions simulate two answered responses (one correct and one incorrect) and one unanswered response; 50% accuracy describes only the two answered sample questions. This is not a real completed production attempt, a 230-question full-length exam, an AAMC exam, or cohort analytics. Personal profile, preferences, and momentum values are unavailable/null; total and section scaled scores are null, trend is unknown, and monthly/cohort history is empty. Missing authored explanations, option rationales, and takeaways remain null; any independent teaching inference must be labeled separately. Other accounts retain their normal authorized production paths. Public search and fetch still retrieve published educational resources.
 
-The reviewer sample is available only when the service separately enables it for its designated reviewer account. Normal KOTC sign-in, OAuth read permissions, account validation, and MCAT membership still apply. Callers cannot choose another identity or enable the sample through tool arguments. The sample creates no production exam attempts or analytics records. Public resources, study snapshots, subject performance, and exam progress must not be described as derived from this sample.
+The six sample-only tools are `get_my_study_snapshot`, `get_my_subject_performance`, `get_my_exam_progress`, `list_my_full_length_attempts`, `get_my_full_length_review`, and `explain_my_full_length_question`. The sample is available only when the service separately enables it for its exact designated reviewer identity. Normal KOTC sign-in, OAuth read permissions, Firebase account validation, and verified MCAT membership remain required. Callers cannot choose another identity or enable the sample through tool arguments. Existing sign-in and membership verification does not disclose production progress. The sample creates no production exams, attempts, or analytics records. Unknown sample attempt or question IDs fail without a production fallback.
 
 ## Connection and data handling
 
@@ -25,7 +25,7 @@ The only MCP server configured by this bundle is:
 
 `https://kotc-full-length-review-347848146862.us-east1.run.app/mcp`
 
-Public KOTC resources are available without a personal account connection. Private review uses KOTC sign-in and OAuth read permissions. The service is intended to read the current learner's authorized KOTC records through the KOTC/Firebase backend. Information returned by tools becomes available to the AI host in the conversation. The bundle contains no credentials, local executable, lifecycle hook, package installer, tracking script, or separate data-export destination.
+Public KOTC resources are available without a personal account connection. Private review uses KOTC sign-in and OAuth read permissions. For normal learner accounts, the service reads authorized records through the KOTC/Firebase backend. For its enabled exact designated reviewer, all private tool results use only the synthetic sample described above. Information returned by tools becomes available to the AI host in the conversation. The bundle contains no credentials, local executable, lifecycle hook, package installer, tracking script, or separate data-export destination.
 
 Use the host's sign-in flow; never paste passwords or access tokens into chat. Disconnect the connection in the host when you no longer want to use it. Account or privacy requests can be sent to support@kingofthecurve.org.
 
@@ -37,7 +37,7 @@ Use the host's sign-in flow; never paste passwords or access tokens into chat. D
 
 ## Release status
 
-Version 1.0.1 is a prepared submission candidate, not evidence of directory approval. This package preparation did not deploy or enable the reviewer sample, upload a bundle, complete a platform OAuth connection, run hosted reviewer cases, record a walkthrough, or submit a listing. Check deployment and platform receipts separately. The package contains no invented demo URL. A genuine post-release walkthrough remains necessary before submission; enter its verified URL in the platform review field.
+Version 1.0.2 is a prepared submission candidate, not evidence of deployment or directory approval. This package describes the separately prepared sample-only runtime; verify that exact runtime is released before using these reviewer instructions. This packaging task did not deploy server code, upload a bundle, complete a platform connection, run hosted reviewer cases, record a walkthrough, or submit a listing. Check deployment and platform receipts separately. The package contains no invented demo URL. A genuine post-release walkthrough and actual five positive/three negative hosted cases remain required before submission; enter only the verified recording URL in the platform review field.
 
 ## Publisher and policies
 

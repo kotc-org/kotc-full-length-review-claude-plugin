@@ -1,8 +1,8 @@
 {
   "name": "kotc-full-length-review",
   "displayName": "KOTC Full-Length Review",
-  "version": "1.0.1",
-  "description": "Review KOTC-original MCAT attempts and connected study progress. Designated reviewer connections use an explicitly labeled synthetic three-question demonstration.",
+  "version": "1.0.2",
+  "description": "Review KOTC-original MCAT attempts and connected study progress. All private tools use only labeled synthetic sample data for the designated reviewer account.",
   "author": {
     "name": "King of the Curve LLC",
     "email": "support@kingofthecurve.org",
