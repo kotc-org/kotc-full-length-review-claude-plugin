@@ -1,0 +1,23 @@
+{
+  "name": "kotc-full-length-review",
+  "displayName": "KOTC Full-Length Review",
+  "version": "1.0.0",
+  "description": "Review your KOTC-original MCAT full-length attempts, understand missed questions, and build a focused study plan from your connected KOTC progress.",
+  "author": {
+    "name": "King of the Curve LLC",
+    "email": "support@kingofthecurve.org",
+    "url": "https://kingofthecurve.org"
+  },
+  "homepage": "https://kotc-full-length-review-347848146862.us-east1.run.app/about",
+  "keywords": [
+    "MCAT",
+    "KOTC",
+    "full-length review",
+    "education"
+  ],
+  "icon": "./assets/logo.png",
+  "documentationUrl": "https://kotc-full-length-review-347848146862.us-east1.run.app/about",
+  "supportUrl": "https://kotc-full-length-review-347848146862.us-east1.run.app/support",
+  "privacyPolicyUrl": "https://kotc-full-length-review-347848146862.us-east1.run.app/privacy",
+  "termsOfServiceUrl": "https://kotc-full-length-review-347848146862.us-east1.run.app/terms"
+}

@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "kotc-full-length-review": {
+      "type": "http",
+      "url": "https://kotc-full-length-review-347848146862.us-east1.run.app/mcp"
+    }
+  }
+}
