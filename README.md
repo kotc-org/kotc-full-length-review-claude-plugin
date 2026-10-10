@@ -13,6 +13,12 @@ All tools are read-only. This plugin cannot submit answers, change scores, save 
 
 This is not an official AAMC product. It does not access AAMC Prep Hub, provide an AAMC question bank, or support recalled live exam material.
 
+## Designated reviewer demonstration
+
+Designated reviewer connections may receive an explicitly labeled KOTC-original synthetic reviewer demonstration: three original circuit questions with simulated correct, incorrect, and unanswered responses. This sample is not a real completed production attempt, a 230-question full-length exam, an AAMC exam, or cohort analytics. Total and section scaled scores are null. Missing authored explanations and option rationales remain null; any independent teaching inference must be labeled separately. Other accounts and the progress tools retain their normal authorized data paths.
+
+The reviewer sample is available only when the service separately enables it for its designated reviewer account. Normal KOTC sign-in, OAuth read permissions, account validation, and MCAT membership still apply. Callers cannot choose another identity or enable the sample through tool arguments. The sample creates no production exam attempts or analytics records. Public resources, study snapshots, subject performance, and exam progress must not be described as derived from this sample.
+
 ## Connection and data handling
 
 The only MCP server configured by this bundle is:
@@ -31,7 +37,7 @@ Use the host's sign-in flow; never paste passwords or access tokens into chat. D
 
 ## Release status
 
-Version 1.0.0 is a prepared submission candidate, not evidence of directory approval. The configured endpoint is the intended production target. This bundle's build did not verify the live endpoint, complete a platform OAuth connection, run reviewer test cases, or submit a directory listing. Deployment and review receipts must be checked separately.
+Version 1.0.1 is a prepared submission candidate, not evidence of directory approval. This package preparation did not deploy or enable the reviewer sample, upload a bundle, complete a platform OAuth connection, run hosted reviewer cases, record a walkthrough, or submit a listing. Check deployment and platform receipts separately. The package contains no invented demo URL. A genuine post-release walkthrough remains necessary before submission; enter its verified URL in the platform review field.
 
 ## Publisher and policies
 
@@ -42,4 +48,8 @@ Version 1.0.0 is a prepared submission candidate, not evidence of directory appr
 - Privacy: https://kotc-full-length-review-347848146862.us-east1.run.app/privacy
 - Terms: https://kotc-full-length-review-347848146862.us-east1.run.app/terms
 
-The service links are planned deployment routes. Confirm they are publicly reachable before submission.
+Recheck the public service links and their data-handling descriptions against the exact deployed release before submission.
+
+## License
+
+This package is proprietary and unlicensed. All rights remain reserved by King of the Curve LLC. No redistribution or modification rights are granted by this package.
