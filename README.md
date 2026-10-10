@@ -13,13 +13,19 @@ All tools are read-only. This plugin cannot submit answers, change scores, save 
 
 This is not an official AAMC product. It does not access AAMC Prep Hub, provide an AAMC question bank, or support recalled live exam material.
 
+## Designated reviewer demonstration
+
+When the service enables its exact designated reviewer account, all six private tools return only an explicitly labeled KOTC-original synthetic reviewer demonstration, including study snapshot, subject performance, and exam progress. No production profile, preferences, momentum, progress, real exam history, monthly scores, or cohort records are read for these reviewer tool results. Three original circuit questions simulate two answered responses (one correct and one incorrect) and one unanswered response; 50% accuracy describes only the two answered sample questions. This is not a real completed production attempt, a 230-question full-length exam, an AAMC exam, or cohort analytics. Personal profile, preferences, and momentum values are unavailable/null; total and section scaled scores are null, trend is unknown, and monthly/cohort history is empty. Missing authored explanations, option rationales, and takeaways remain null; any independent teaching inference must be labeled separately. Other accounts retain their normal authorized production paths. Public search and fetch still retrieve published educational resources.
+
+The six sample-only tools are `get_my_study_snapshot`, `get_my_subject_performance`, `get_my_exam_progress`, `list_my_full_length_attempts`, `get_my_full_length_review`, and `explain_my_full_length_question`. The sample is available only when the service separately enables it for its exact designated reviewer identity. Normal KOTC sign-in, OAuth read permissions, Firebase account validation, and verified MCAT membership remain required. Callers cannot choose another identity or enable the sample through tool arguments. Existing sign-in and membership verification does not disclose production progress. The sample creates no production exams, attempts, or analytics records. Unknown sample attempt or question IDs fail without a production fallback.
+
 ## Connection and data handling
 
 The only MCP server configured by this bundle is:
 
 `https://kotc-full-length-review-347848146862.us-east1.run.app/mcp`
 
-Public KOTC resources are available without a personal account connection. Private review uses KOTC sign-in and OAuth read permissions. The service is intended to read the current learner's authorized KOTC records through the KOTC/Firebase backend. Information returned by tools becomes available to the AI host in the conversation. The bundle contains no credentials, local executable, lifecycle hook, package installer, tracking script, or separate data-export destination.
+Public KOTC resources are available without a personal account connection. Private review uses KOTC sign-in and OAuth read permissions. For normal learner accounts, the service reads authorized records through the KOTC/Firebase backend. For its enabled exact designated reviewer, all private tool results use only the synthetic sample described above. Information returned by tools becomes available to the AI host in the conversation. The bundle contains no credentials, local executable, lifecycle hook, package installer, tracking script, or separate data-export destination.
 
 Use the host's sign-in flow; never paste passwords or access tokens into chat. Disconnect the connection in the host when you no longer want to use it. Account or privacy requests can be sent to support@kingofthecurve.org.
 
@@ -31,7 +37,7 @@ Use the host's sign-in flow; never paste passwords or access tokens into chat. D
 
 ## Release status
 
-Version 1.0.0 is a prepared submission candidate, not evidence of directory approval. The configured endpoint is the intended production target. This bundle's build did not verify the live endpoint, complete a platform OAuth connection, run reviewer test cases, or submit a directory listing. Deployment and review receipts must be checked separately.
+Version 1.0.2 is a prepared submission candidate, not evidence of deployment or directory approval. This package describes the separately prepared sample-only runtime; verify that exact runtime is released before using these reviewer instructions. This packaging task did not deploy server code, upload a bundle, complete a platform connection, run hosted reviewer cases, record a walkthrough, or submit a listing. Check deployment and platform receipts separately. The package contains no invented demo URL. A genuine post-release walkthrough and actual five positive/three negative hosted cases remain required before submission; enter only the verified recording URL in the platform review field.
 
 ## Publisher and policies
 
@@ -42,4 +48,8 @@ Version 1.0.0 is a prepared submission candidate, not evidence of directory appr
 - Privacy: https://kotc-full-length-review-347848146862.us-east1.run.app/privacy
 - Terms: https://kotc-full-length-review-347848146862.us-east1.run.app/terms
 
-The service links are planned deployment routes. Confirm they are publicly reachable before submission.
+Recheck the public service links and their data-handling descriptions against the exact deployed release before submission.
+
+## License
+
+This package is proprietary and unlicensed. All rights remain reserved by King of the Curve LLC. No redistribution or modification rights are granted by this package.
